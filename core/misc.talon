@@ -1,4 +1,4 @@
-disk: key(ctrl-s)
+disk: edit.save()
 nope: edit.undo()
 
 wipe word left:
