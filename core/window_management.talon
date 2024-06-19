@@ -4,6 +4,5 @@ display last: user.move_window_to_last_display()
 snap full: user.snap_window_full()
 snap center: user.snap_window_center()
 
-# TODO: this is still Windows specific, no-op on mac
-snap down: key("super-down")
-snap up: key("super-up")
+snap down: user.snap_window_down()
+snap up: user.snap_window_up()

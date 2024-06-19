@@ -19,3 +19,9 @@ class UserActions:
 
     def snap_window_center():
         actions.key("ctrl-alt-c")
+
+    def snap_window_down():
+        pass # TODO
+
+    def snap_window_up():
+        pass # TODO
