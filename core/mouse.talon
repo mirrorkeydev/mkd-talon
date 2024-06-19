@@ -1,0 +1,1 @@
+mouse center: user.mouse_move_center_window()
