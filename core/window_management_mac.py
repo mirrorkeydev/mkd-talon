@@ -21,7 +21,7 @@ class UserActions:
         actions.key("ctrl-alt-c")
 
     def snap_window_down():
-        pass # TODO
+        actions.key("ctrl-alt-bksp")
 
     def snap_window_up():
-        pass # TODO
+        actions.key("shift-cmd-up")
