@@ -11,4 +11,24 @@ change chuck: user.vscode("git.revertSelectedRanges")
 file diff: user.vscode("git.openChange")
 
 #Searching
-searcher: user.vscode("search.action.openNewEditorToSide")
+# Cursorless magic: actions_custom.csv > `search, search.action.openNewEditor`
+searcher [<user.text>]:
+    user.vscode("search.action.openNewEditor")
+    insert(text or "")
+searcher side [<user.text>]:
+    user.vscode("search.action.openNewEditorToSide")
+    insert(text or "")
+
+#Explorer
+(outline | explorer) rename: key("f2")
+file rename: user.vscode("fileutils.renameFile")
+
+#File navigation from editor
+file next [<number_small>]:
+    user.vscode("workbench.files.action.showActiveFileInExplorer")
+    key("down:{number_small or 1} enter")
+
+file last [<number_small>]:
+    user.vscode("workbench.files.action.showActiveFileInExplorer")
+    key("up:{number_small or 1} enter")
+

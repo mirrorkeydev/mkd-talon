@@ -1,7 +1,7 @@
 disk: edit.save()
 nope: edit.undo()
 
-wipe word left:
+wipe word [left]:
     edit.extend_word_left()
     edit.delete()
 
