@@ -12,12 +12,12 @@ file diff: user.vscode("git.openChange")
 
 #Searching
 # Cursorless magic: actions_custom.csv > `search, search.action.openNewEditor`
-searcher [<user.text>]:
+searcher [<command>]:
     user.vscode("search.action.openNewEditor")
-    insert(text or "")
-searcher side [<user.text>]:
+    insert(command or "")
+searchee [<command>]:
     user.vscode("search.action.openNewEditorToSide")
-    insert(text or "")
+    insert(command or "")
 
 #Explorer
 (outline | explorer) rename: key("f2")
