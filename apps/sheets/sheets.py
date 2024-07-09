@@ -1,6 +1,6 @@
 from talon import Module
 
-from .sheet_captures import Cell
+from .sheet_captures import Cell, CellRange
 
 mod = Module()
 
@@ -17,3 +17,6 @@ app.name: Sheets
 class Actions:
     def select_cell(cell: Cell):
         """Selects the cell, without placing the cursor inside."""
+
+    def select_cell_range(cell_range: CellRange):
+        """Selects the cell range, without placing the cursor inside."""
