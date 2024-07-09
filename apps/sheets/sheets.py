@@ -9,6 +9,9 @@ tag: browser
 browser.host: docs.google.com
 browser.path: /^/spreadsheets/.*/
 """
+mod.apps.google_sheets = r"""
+app.name: Sheets
+"""
 
 @mod.action_class
 class Actions:
