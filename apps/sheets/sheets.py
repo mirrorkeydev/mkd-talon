@@ -37,7 +37,6 @@ class Actions:
         actions.user.chrome_mod("j")
         old_column, old_row = get_current_location()
         actions.key("backspace")
-        print(old_column, old_row)
         actions.insert(f"{col}{old_row}")
         actions.key("enter")
 
