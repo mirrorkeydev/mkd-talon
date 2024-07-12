@@ -25,7 +25,7 @@ quick access: key(alt-.)
 cell (center | focus): user.chrome_mod("backspace")
 row <user.number_string>: user.select_row(number_string)
 (col | column) <user.letters>: user.select_column(letters)
-# Ex: `call air two` selects A2
+# Ex: `cell air two` selects A2
 cell <user.cell>: user.select_cell(cell)
 # Ex: `cell air two past bat fourteen` selects A2:B14
 cell <user.cell_range>: user.select_cell_range(cell_range)
