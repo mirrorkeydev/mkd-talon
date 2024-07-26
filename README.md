@@ -2,22 +2,22 @@
 
 This repository contains my config for Talon Voice. Commands are tested to work across Mac and Windows, but not Linux.
 
-## mkd-talon Strict Dependencies
+Many things in this repo probably won't work without also having talon-community installed. A tiny minority of things won't work without my specific fork of community.
 
-- talon-community
+## Features
+
+1. [Google Sheets support](/apps/sheets) (e.g. `cell air two past bat fourteen` selects A2:B14)
+
+Misc: [Rango/browsing enhancements](/apps/chrome.talon)
 
 ## My Talon Setup
 
-- talon-community
+- talon-community ([my fork](https://github.com/mirrorkeydev/community))
 - cursorless
 - rango
 - talon-gaze-ocr
 - screen-spots
-- mkd-talon
-
-#### Windows
-
-- 
+- mkd-talon (this repo!)
 
 #### Mac
 
@@ -25,7 +25,7 @@ This repository contains my config for Talon Voice. Commands are tested to work 
 
 ## Cursorless hat colors
 
-Colors sampled from Palenight theme. "Enhanced" are boosted in value and saturation slightly to compensate for the hats being pretty small, and the hue is also adjusted slightly to make my chosen colors easier to differentiate.
+Colors sampled from Palenight theme. "Enhanced" are boosted in value and saturation slightly to compensate for the hat size I prefer, and the hue is also adjusted slightly to make my chosen colors easier to differentiate.
 
 ```
     "workbench.colorTheme": "Palenight (Mild Contrast)",
