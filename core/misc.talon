@@ -9,4 +9,5 @@ wipe word right:
     edit.extend_word_right()
     edit.delete()
 
-talon restart: user.restart_talon()
+talon (restart | reboot): user.restart_talon()
+talon quit: user.quit_talon()
