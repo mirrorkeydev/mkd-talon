@@ -11,3 +11,5 @@ wipe word right:
 
 talon (restart | reboot): user.restart_talon()
 talon quit: user.quit_talon()
+
+clap: key(enter)
